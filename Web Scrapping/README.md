@@ -1,3 +1,5 @@
+*Resumen*
+
 Para la realización del scrap se utilizó el paquete Selenium.
 
 Selenium es una herramienta, que a través de un driver, genera una navegación web simulada. Este permite la navegación a través de la definición de un url. 
