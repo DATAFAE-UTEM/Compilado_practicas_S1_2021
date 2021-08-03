@@ -31,15 +31,15 @@ try:
         Ec.presence_of_element_located((By.XPATH, "//*[@id='testId-searchResults-products']"))
     )
     # Determinacion de elemento que contiene data especifica a extraer.
-    products = main.find_elements_by_class_name("grid-pod")
+    contenedor = main.find_elements_by_class_name("grid-pod")
     
     # Extraccion
     for product in products:
         # nombre, precio y marca
-        name = product.find_element_by_class_name("pod-subTitle")
-        price = product.find_element_by_css_selector(".price-0 .cmr-icon-container")
-        brand = product.find_element_by_class_name("pod-title")
-        print(name.text, price.text, brand.text)
+        atributo_1 = contenedor.find_element_by_class_name("pod-subTitle")
+        atributo_2 = contenedor.find_element_by_css_selector(".price-0 .cmr-icon-container")
+        atributo_3 = contenedor.find_element_by_class_name("pod-title")
+        print(atributo_1.text, atributo_2.text, atributo_3.text)
 
 finally:
     # cerrar el driver siempre con este comando
