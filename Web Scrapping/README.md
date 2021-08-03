@@ -1,4 +1,4 @@
-#*Resumen*
+#Resumen
 
 Para la realización del scrap se utilizó el paquete Selenium.
 
