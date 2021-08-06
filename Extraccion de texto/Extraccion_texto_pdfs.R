@@ -46,8 +46,8 @@ for(file in files){
   Fecha = corp[[ file ]][["meta"]][["datetimestamp"]]
   
   #Páginas
-  pages_pdf = pdf_info(file)$pages
-  pages_pdf <- ifelse(pages_pdf>5,5,pages_pdf)
+  pages_pdf = pdf_info(file)$pages 
+  pages_pdf <- ifelse(pages_pdf>5,5,pages_pdf) # Aca se delimita el n° de paginas deseadas a extraer. Recordas el [intervalo[ cerrado.
   
   # Transformación del texto
   pngfile = pdftools::pdf_convert(file,
